@@ -1368,6 +1368,7 @@ def text_input(obj, map, name, wrap_len, max_len=1000000):
             map.show()
             ev = ""
         std_loop()
+        time.sleep(0.0001) # somehow fixes input recognition under my win 10???
 
 
 # Functions needed for movemap
