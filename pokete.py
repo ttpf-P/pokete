@@ -235,7 +235,7 @@ class Poke():
         if _hp != "SKIP":
             self.hp = _hp if _hp <= self.full_hp else self.hp
             self.health_bar_maker(self.hp)
-        self.desc = se.Text(liner(self.inf["desc"], se.width-34))
+        self.desc = se.Text(liner(self.inf["desc"], se.screen_width-34))
         self.ico = se.Box(4, 11)
         for ico in self.inf["ico"]:
             self.ico.add_ob(se.Text(ico["txt"], state="float", esccode=eval(ico["esc"]) if ico["esc"] is not None else "", ignore=f'{eval(ico["esc"]) if ico["esc"] is not None else ""} {Color.reset}'), 0, 0)
@@ -361,7 +361,7 @@ class Poke():
             return
         line = se.Line(Color.thicc+Color.yellow+"-"+Color.reset,
                         self.enem.ico.x-self.ico.x+(-11 if self.player else 11),
-                        self.enem.ico.y-self.ico.y, type="crippled")
+                        self.enem.ico.y-self.ico.y, l_type="crippled")
         line.add(self.ico.map, self.ico.x+(11 if self.player else -1), self.ico.y+1)
         self.ico.map.show()
         time.sleep(1)
@@ -372,7 +372,7 @@ class Poke():
         if self.enem == self:
             return
         line = se.Line(" ", self.enem.ico.x-self.ico.x+(-11 if self.player else 11),
-                        self.enem.ico.y-self.ico.y, type="crippled")
+                        self.enem.ico.y-self.ico.y, l_type="crippled")
         line.add(self.ico.map, self.ico.x+(11 if self.player else -1), self.ico.y+1)
         self.ico.map.show()
         for i in range(len(line.obs)):
@@ -406,7 +406,7 @@ class Poke():
     def evolve(self):
         if not self.player:
             return
-        new = Poke(self.evolve_poke, self.xp, attacks = self.attacks)
+        new = Poke(self.evolve_poke, self.xp, _attacks = self.attacks)
         self.ico.remove()
         self.ico.add(evomap, round(evomap.width/2-4), round((evomap.height-8)/2))
         self.move_shine()
@@ -1368,7 +1368,7 @@ def text_input(obj, map, name, wrap_len, max_len=1000000):
             map.show()
             ev = ""
         std_loop()
-        time.sleep(0.0001) # somehow fixes input recognition under my win 10???
+        time.sleep(0.05)
 
 
 # Functions needed for movemap
