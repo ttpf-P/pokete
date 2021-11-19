@@ -1,8 +1,15 @@
-v0.5.1
+v0.6.0
 
 # Pokete wiki
 This wiki/documentation is a compilation of all Poketes/attacks/types present in the Pokete game.
-This wiki can be generated using ```$ ./gen-wiki.py```.
+This wiki can be generated using ```$ ./gen_wiki.py```.
+
+Use ```$./gen_wiki.py help``` to get more information about different wikis.
+
+You can find different versions of this wiki:
+
+- A single-page version can be found [here](wiki.md)
+- A multi-page version can be found [here](https://lxgr-linux.github.io/pokete/wiki-multi/)
 
 ## Table of contents
 1. [Poketes](#poketes)
@@ -22,7 +29,7 @@ This wiki can be generated using ```$ ./gen-wiki.py```.
    4. [Ground Poketes](#ground-poketes)
        1. [Dicki](#dicki)
        2. [Dicko](#dicko)
-       3. [Lil nut](#lil_nut)
+       3. [Lil nut](#lil-nut)
        4. [Rollator](#rollator)
    5. [Ice Poketes](#ice-poketes)
        1. [Cubl](#cubl)
@@ -30,13 +37,15 @@ This wiki can be generated using ```$ ./gen-wiki.py```.
    6. [Normal Poketes](#normal-poketes)
        1. [Hornita](#hornita)
        2. [Horny](#horny)
-       3. [Rato](#rato)
+       3. [Mowcow](#mowcow)
+       4. [Rato](#rato)
    7. [Plant Poketes](#plant-poketes)
        1. [Bushy](#bushy)
        2. [Megapois](#megapois)
        3. [Poisopla](#poisopla)
        4. [Rosi](#rosi)
        5. [Treenator](#treenator)
+       6. [Wheeto](#wheeto)
    8. [Poison Poketes](#poison-poketes)
        1. [Choka](#choka)
        2. [Würgos](#würgos)
@@ -93,8 +102,9 @@ This wiki can be generated using ```$ ./gen-wiki.py```.
        4. [Meat skewer](#meat-skewer)
        5. [Power bite](#power-bite)
        6. [Snooze](#snooze)
-       7. [Tackle](#tackle)
-       8. [Tail wipe](#tail-wipe)
+       7. [Supercow power](#supercow-power)
+       8. [Tackle](#tackle)
+       9. [Tail wipe](#tail-wipe)
    7. [Plant attacks](#plant-attacks)
        1. [Apple drop](#apple-drop)
        2. [Bark hardening](#bark-hardening)
@@ -103,8 +113,9 @@ This wiki can be generated using ```$ ./gen-wiki.py```.
        5. [Poison spores](#poison-spores)
        6. [Root slap](#root-slap)
        7. [Root strangler](#root-strangler)
-       8. [Sucker](#sucker)
-       9. [Super sucker](#super-sucker)
+       8. [Special smell](#special-smell)
+       9. [Sucker](#sucker)
+       10. [Super sucker](#super-sucker)
    8. [Poison attacks](#poison-attacks)
        1. [Poison bite](#poison-bite)
        2. [Poison thorn](#poison-thorn)
@@ -145,6 +156,7 @@ This wiki can be generated using ```$ ./gen-wiki.py```.
 
 ## Poketes
 In the following all Poketes with their attributes are displayed.
+
 ### Electro Poketes
 #### Electrode
 A small floating ball that will give you a shock.
@@ -159,9 +171,9 @@ A small floating ball that will give you a shock.
 
 - Type: [Electro](#types)
 - Health points: 20
-- Attack factor: level+5
-- Defense factor: level+2
-- Initiative: level+4
+- Attack factor: 5
+- Defense factor: 2
+- Initiative: 4
 - Missing chance: 0
 - Rarity: 0.8
 - Loosing experience: 3
@@ -169,7 +181,10 @@ A small floating ball that will give you a shock.
    + [Shock](#shock)
    + [Charging](#charging)
    + [Mega arch](#mega-arch)
+- Can be found in:
+   + Nowhere
 - Does not evolve
+
 ### Fire Poketes
 #### Wolfior
 A fiery wolf straight from hell, that likes to burn 11 years old butts of.
@@ -184,9 +199,9 @@ A fiery wolf straight from hell, that likes to burn 11 years old butts of.
 
 - Type: [Fire](#types)
 - Health points: 20
-- Attack factor: level+6
-- Defense factor: level+3
-- Initiative: level+4
+- Attack factor: 6
+- Defense factor: 3
+- Initiative: 4
 - Missing chance: 0
 - Rarity: 1
 - Loosing experience: 2
@@ -194,6 +209,12 @@ A fiery wolf straight from hell, that likes to burn 11 years old butts of.
    + [Tackle](#tackle)
    + [Fire bite](#fire-bite)
    + [Ash throw](#ash-throw)
+- Can be found in:
+   + Route 1
+   + Josi Town
+   + Josi Lake
+   + Abandoned village
+   + Route 3
 - Evolves to [Wolfiro](#wolfiro) at level 25
 
 #### Wolfiro
@@ -209,9 +230,9 @@ A fiery wolf from hell on steroids.
 
 - Type: [Fire](#types)
 - Health points: 25
-- Attack factor: level+7
-- Defense factor: level+4
-- Initiative: level+5
+- Attack factor: 7
+- Defense factor: 4
+- Initiative: 5
 - Missing chance: 0
 - Rarity: 1
 - Loosing experience: 4
@@ -220,7 +241,10 @@ A fiery wolf from hell on steroids.
    + [Fire bite](#fire-bite)
    + [Ash throw](#ash-throw)
    + [Fire ball](#fire-ball)
+- Can be found in:
+   + Nowhere
 - Does not evolve
+
 ### Flying Poketes
 #### Bato
 An annoying flying rat.
@@ -235,15 +259,20 @@ WW\/* *\/WW
 
 - Type: [Flying](#types)
 - Health points: 20
-- Attack factor: level+3
-- Defense factor: level+1
-- Initiative: level+6
+- Attack factor: 3
+- Defense factor: 1
+- Initiative: 6
 - Missing chance: 0
 - Rarity: 1.3
 - Loosing experience: 3
 - Attacks:
    + [Bite](#bite)
    + [Cry](#cry)
+- Can be found in:
+   + Nice Town cave
+   + Mysterious cave
+   + Dark cave
+   + Big mountain cave
 - Evolves to [Bator](#bator) at level 20
 
 #### Bator
@@ -259,9 +288,9 @@ WW\/o o\/WW
 
 - Type: [Flying](#types)
 - Health points: 25
-- Attack factor: level+4
-- Defense factor: level+2
-- Initiative: level+8
+- Attack factor: 4
+- Defense factor: 2
+- Initiative: 8
 - Missing chance: 0
 - Rarity: 0.2
 - Loosing experience: 4
@@ -270,7 +299,10 @@ WW\/o o\/WW
    + [Cry](#cry)
    + [Poison bite](#poison-bite)
    + [Wing hit](#wing-hit)
+- Can be found in:
+   + Mysterious cave
 - Does not evolve
+
 
 #### Ostri
 A very aggressive bird Pokete that lives near deserts and will try to pick out your eyes.
@@ -285,9 +317,9 @@ A very aggressive bird Pokete that lives near deserts and will try to pick out y
 
 - Type: [Flying](#types)
 - Health points: 20
-- Attack factor: level+8
-- Defense factor: level
-- Initiative: level+7
+- Attack factor: 8
+- Defense factor: 0
+- Initiative: 7
 - Missing chance: 0
 - Rarity: 0.6
 - Loosing experience: 4
@@ -295,7 +327,10 @@ A very aggressive bird Pokete that lives near deserts and will try to pick out y
    + [Tackle](#tackle)
    + [Eye pick](#eye-pick)
    + [Brooding](#brooding)
+- Can be found in:
+   + Nowhere
 - Does not evolve
+
 
 #### Owol
 A night active Pokete, that is looking for lil children as a midnight snack.
@@ -310,9 +345,9 @@ A night active Pokete, that is looking for lil children as a midnight snack.
 
 - Type: [Flying](#types)
 - Health points: 20
-- Attack factor: level+7
-- Defense factor: level+2
-- Initiative: level+3
+- Attack factor: 7
+- Defense factor: 2
+- Initiative: 3
 - Missing chance: 0
 - Rarity: 0.5
 - Loosing experience: 2
@@ -320,7 +355,15 @@ A night active Pokete, that is looking for lil children as a midnight snack.
    + [Pick](#pick)
    + [Wing hit](#wing-hit)
    + [Cry](#cry)
+- Can be found in:
+   + Abandoned village
+   + Route 3
+   + Route 4
+   + Deepens forest
+   + Route 5
+   + Route 6
 - Does not evolve
+
 
 #### Schmetterling
 A butterfly that will schmetter you away.
@@ -335,16 +378,19 @@ A butterfly that will schmetter you away.
 
 - Type: [Flying](#types)
 - Health points: 20
-- Attack factor: level+4
-- Defense factor: level+2
-- Initiative: level+4
+- Attack factor: 4
+- Defense factor: 2
+- Initiative: 4
 - Missing chance: 0.1
 - Rarity: 1
 - Loosing experience: 3
 - Attacks:
    + [Schmetter](#schmetter)
    + [Wing hit](#wing-hit)
+- Can be found in:
+   + Nowhere
 - Does not evolve
+
 
 #### Vogli
 A very common bird Pokete that lives everywhere.
@@ -359,15 +405,19 @@ A very common bird Pokete that lives everywhere.
 
 - Type: [Flying](#types)
 - Health points: 20
-- Attack factor: level+6
-- Defense factor: level+1
-- Initiative: level+6
+- Attack factor: 6
+- Defense factor: 1
+- Initiative: 6
 - Missing chance: 0
 - Rarity: 1
 - Loosing experience: 2
 - Attacks:
    + [Tackle](#tackle)
    + [Power pick](#power-pick)
+- Can be found in:
+   + Nice Town
+   + Route 4
+   + Deepens forest
 - Evolves to [Voglo](#voglo) at level 20
 
 #### Voglo
@@ -383,9 +433,9 @@ A very aggressive bird Pokete that can only be found in the woods.
 
 - Type: [Flying](#types)
 - Health points: 20
-- Attack factor: level+7
-- Defense factor: level+1
-- Initiative: level+7
+- Attack factor: 7
+- Defense factor: 1
+- Initiative: 7
 - Missing chance: 0
 - Rarity: 0.8
 - Loosing experience: 3
@@ -394,7 +444,21 @@ A very aggressive bird Pokete that can only be found in the woods.
    + [Power pick](#power-pick)
    + [Wing hit](#wing-hit)
    + [Brooding](#brooding)
+- Can be found in:
+   + Route 1
+   + Josi Town
+   + Josi Lake
+   + Route 2
+   + Abandoned village
+   + Route 3
+   + Route 4
+   + Deepens forest
+   + Route 5
+   + Route 6
+   + Mowcow meadow
+   + The fields of Agrawos
 - Does not evolve
+
 ### Ground Poketes
 #### Dicki
 A little what ever, that sticks out of the ground.
@@ -409,9 +473,9 @@ A little what ever, that sticks out of the ground.
 
 - Type: [Ground](#types)
 - Health points: 20
-- Attack factor: level+2
-- Defense factor: level+4
-- Initiative: level+2
+- Attack factor: 2
+- Defense factor: 4
+- Initiative: 2
 - Missing chance: 0.1
 - Rarity: 1
 - Loosing experience: 2
@@ -420,7 +484,9 @@ A little what ever, that sticks out of the ground.
    + [Dick energy](#dick-energy)
    + [Hiding](#hiding)
    + [Ground hit](#ground-hit)
-- Evolves to [Dicko](#dicko) at level 35
+- Can be found in:
+   + Nowhere
+- Evolves to [Dicko](#dicko) at level 55
 
 #### Dicko
 An even bigger what ever, that sticks out of the ground.
@@ -435,9 +501,9 @@ An even bigger what ever, that sticks out of the ground.
 
 - Type: [Ground](#types)
 - Health points: 25
-- Attack factor: level+3
-- Defense factor: level+5
-- Initiative: level+3
+- Attack factor: 3
+- Defense factor: 5
+- Initiative: 3
 - Missing chance: 0.1
 - Rarity: 1
 - Loosing experience: 2
@@ -446,7 +512,10 @@ An even bigger what ever, that sticks out of the ground.
    + [Dick energy](#dick-energy)
    + [Hiding](#hiding)
    + [Ground hit](#ground-hit)
+- Can be found in:
+   + Nowhere
 - Does not evolve
+
 
 #### Lil nut
 A very small what ever, that sticks out of the ground.
@@ -461,16 +530,18 @@ A very small what ever, that sticks out of the ground.
 
 - Type: [Ground](#types)
 - Health points: 20
-- Attack factor: level+1
-- Defense factor: level+3
-- Initiative: level+1
+- Attack factor: 1
+- Defense factor: 3
+- Initiative: 1
 - Missing chance: 0.1
 - Rarity: 1
 - Loosing experience: 2
 - Attacks:
    + [Tackle](#tackle)
    + [Ground hit](#ground-hit)
-- Evolves to [Dicki](#dicki) at level 15
+- Can be found in:
+   + The fields of Agrawos
+- Evolves to [Dicki](#dicki) at level 35
 
 #### Rollator
 A big chunk of stone and dirt, that roles around.
@@ -485,16 +556,21 @@ A big chunk of stone and dirt, that roles around.
 
 - Type: [Ground](#types)
 - Health points: 25
-- Attack factor: level+2
-- Defense factor: level+5
-- Initiative: level+3
+- Attack factor: 2
+- Defense factor: 5
+- Initiative: 3
 - Missing chance: 0
 - Rarity: 0.5
 - Loosing experience: 3
 - Attacks:
    + [Tackle](#tackle)
    + [Power roll](#power-roll)
+- Can be found in:
+   + Route 2
+   + Dark cave
+   + Big mountain see
 - Does not evolve
+
 ### Ice Poketes
 #### Cubl
 A small ice cube.
@@ -509,9 +585,9 @@ A small ice cube.
 
 - Type: [Ice](#types)
 - Health points: 20
-- Attack factor: level+3
-- Defense factor: level+3
-- Initiative: level+1
+- Attack factor: 3
+- Defense factor: 3
+- Initiative: 1
 - Missing chance: 0.1
 - Rarity: 1.2
 - Loosing experience: 2
@@ -519,6 +595,8 @@ A small ice cube.
    + [Tackle](#tackle)
    + [Freeze](#freeze)
    + [Snow storm](#snow-storm)
+- Can be found in:
+   + Nowhere
 - Evolves to [Spikl](#spikl) at level 30
 
 #### Spikl
@@ -534,9 +612,9 @@ A block of ice.
 
 - Type: [Ice](#types)
 - Health points: 25
-- Attack factor: level+4
-- Defense factor: level+4
-- Initiative: level+2
+- Attack factor: 4
+- Defense factor: 4
+- Initiative: 2
 - Missing chance: 0.1
 - Rarity: 0.9
 - Loosing experience: 4
@@ -545,7 +623,10 @@ A block of ice.
    + [Freeze](#freeze)
    + [Snow storm](#snow-storm)
    + [Sword of ice](#sword-of-ice)
+- Can be found in:
+   + Nowhere
 - Does not evolve
+
 ### Normal Poketes
 #### Hornita
 An majestic horse that is always looking for something to pick with its horn.
@@ -560,9 +641,9 @@ An majestic horse that is always looking for something to pick with its horn.
 
 - Type: [Normal](#types)
 - Health points: 20
-- Attack factor: level+6
-- Defense factor: level+2
-- Initiative: level+3
+- Attack factor: 6
+- Defense factor: 2
+- Initiative: 3
 - Missing chance: 0
 - Rarity: 1
 - Loosing experience: 3
@@ -570,7 +651,14 @@ An majestic horse that is always looking for something to pick with its horn.
    + [Tackle](#tackle)
    + [Meat skewer](#meat-skewer)
    + [Tail wipe](#tail-wipe)
+- Can be found in:
+   + Route 1
+   + Josi Town
+   + Josi Lake
+   + Route 5
+   + Route 6
 - Does not evolve
+
 
 #### Horny
 A teenage unicorn in the middle of puberty.
@@ -585,16 +673,45 @@ A teenage unicorn in the middle of puberty.
 
 - Type: [Normal](#types)
 - Health points: 20
-- Attack factor: level+5
-- Defense factor: level+1
-- Initiative: level+4
+- Attack factor: 5
+- Defense factor: 1
+- Initiative: 4
 - Missing chance: 0.2
 - Rarity: 1
 - Loosing experience: 2
 - Attacks:
    + [Tackle](#tackle)
    + [Meat skewer](#meat-skewer)
+- Can be found in:
+   + Nice Town
 - Evolves to [Hornita](#hornita) at level 20
+
+#### Mowcow
+A cow-like creature found on meadows.
+
+```
+    ^__^   
+    (oo)   
+    (__)   
+           
+
+```
+
+- Type: [Normal](#types)
+- Health points: 20
+- Attack factor: 2
+- Defense factor: 3
+- Initiative: 2
+- Missing chance: 0
+- Rarity: 1
+- Loosing experience: 2
+- Attacks:
+   + [Tackle](#tackle)
+- Can be found in:
+   + Mowcow meadow
+   + The fields of Agrawos
+- Does not evolve
+
 
 #### Rato
 An annoying rat.
@@ -609,16 +726,27 @@ An annoying rat.
 
 - Type: [Normal](#types)
 - Health points: 20
-- Attack factor: level+4
-- Defense factor: level+2
-- Initiative: level+6
+- Attack factor: 4
+- Defense factor: 2
+- Initiative: 6
 - Missing chance: 0
 - Rarity: 1.3
 - Loosing experience: 2
 - Attacks:
    + [Tackle](#tackle)
    + [Tail wipe](#tail-wipe)
+- Can be found in:
+   + Nice Town
+   + Nice Town cave
+   + Route 1
+   + Josi Town
+   + Josi Lake
+   + Abandoned house
+   + Route 4
+   + Deepens forest
+   + Big mountain see
 - Does not evolve
+
 ### Plant Poketes
 #### Bushy
 A bush, and just a bush. But watch out!
@@ -633,15 +761,19 @@ A bush, and just a bush. But watch out!
 
 - Type: [Plant](#types)
 - Health points: 25
-- Attack factor: level+2
-- Defense factor: level+1
-- Initiative: level+1
+- Attack factor: 2
+- Defense factor: 1
+- Initiative: 1
 - Missing chance: 0
 - Rarity: 1
 - Loosing experience: 1
 - Attacks:
    + [Tackle](#tackle)
    + [Bark hardening](#bark-hardening)
+- Can be found in:
+   + Route 2
+   + Route 7
+   + Mowcow meadow
 - Evolves to [Treenator](#treenator) at level 20
 
 #### Megapois
@@ -657,9 +789,9 @@ A very unsuspicious plant.
 
 - Type: [Plant](#types)
 - Health points: 25
-- Attack factor: level+3
-- Defense factor: level+5
-- Initiative: level+2
+- Attack factor: 3
+- Defense factor: 5
+- Initiative: 2
 - Missing chance: 0.1
 - Rarity: 0.9
 - Loosing experience: 6
@@ -668,7 +800,10 @@ A very unsuspicious plant.
    + [Poison spores](#poison-spores)
    + [Leaf storm](#leaf-storm)
    + [Poison thorn](#poison-thorn)
+- Can be found in:
+   + The fields of Agrawos
 - Does not evolve
+
 
 #### Poisopla
 A unsuspicious plant.
@@ -683,9 +818,9 @@ A unsuspicious plant.
 
 - Type: [Plant](#types)
 - Health points: 20
-- Attack factor: level+3
-- Defense factor: level+3
-- Initiative: level+1
+- Attack factor: 3
+- Defense factor: 3
+- Initiative: 1
 - Missing chance: 0.1
 - Rarity: 0.9
 - Loosing experience: 6
@@ -693,6 +828,8 @@ A unsuspicious plant.
    + [Root slap](#root-slap)
    + [Poison spores](#poison-spores)
    + [Leaf storm](#leaf-storm)
+- Can be found in:
+   + Route 7
 - Evolves to [Megapois](#megapois) at level 20
 
 #### Rosi
@@ -708,16 +845,19 @@ A plant Pokete, that's often mistaken for a normal flower.
 
 - Type: [Plant](#types)
 - Health points: 20
-- Attack factor: level
-- Defense factor: level+1
-- Initiative: level+3
+- Attack factor: 0
+- Defense factor: 1
+- Initiative: 3
 - Missing chance: 0
 - Rarity: 0.8
 - Loosing experience: 2
 - Attacks:
    + [Sucker](#sucker)
    + [Super sucker](#super-sucker)
+- Can be found in:
+   + Nowhere
 - Does not evolve
+
 
 #### Treenator
 A scary an dangerous apple tree.
@@ -732,9 +872,9 @@ A scary an dangerous apple tree.
 
 - Type: [Plant](#types)
 - Health points: 25
-- Attack factor: level+2
-- Defense factor: level+2
-- Initiative: level+2
+- Attack factor: 2
+- Defense factor: 2
+- Initiative: 2
 - Missing chance: 0
 - Rarity: 1
 - Loosing experience: 2
@@ -743,7 +883,37 @@ A scary an dangerous apple tree.
    + [Bark hardening](#bark-hardening)
    + [Branch stab](#branch-stab)
    + [Root strangler](#root-strangler)
+- Can be found in:
+   + Route 7
 - Does not evolve
+
+
+#### Wheeto
+A plant Pokete found in Agrawos, with special 'Powers'.
+
+```
+    \ /    
+    \|/    
+    \|/    
+     |     
+
+```
+
+- Type: [Plant](#types)
+- Health points: 20
+- Attack factor: 3
+- Defense factor: 2
+- Initiative: 2
+- Missing chance: 0.1
+- Rarity: 1
+- Loosing experience: 2
+- Attacks:
+   + [Root slap](#root-slap)
+   + [Special smell](#special-smell)
+- Can be found in:
+   + Nowhere
+- Does not evolve
+
 ### Poison Poketes
 #### Choka
 A fucking dangerous and enormous snake Pokete.
@@ -758,9 +928,9 @@ A fucking dangerous and enormous snake Pokete.
 
 - Type: [Poison](#types)
 - Health points: 25
-- Attack factor: level+5
-- Defense factor: level+1
-- Initiative: level+4
+- Attack factor: 5
+- Defense factor: 1
+- Initiative: 4
 - Missing chance: 0
 - Rarity: 0.5
 - Loosing experience: 4
@@ -769,7 +939,10 @@ A fucking dangerous and enormous snake Pokete.
    + [Bite](#bite)
    + [Poison bite](#poison-bite)
    + [Power bite](#power-bite)
+- Can be found in:
+   + Nowhere
 - Does not evolve
+
 
 #### Würgos
 A dangerous snake Pokete.
@@ -784,9 +957,9 @@ A dangerous snake Pokete.
 
 - Type: [Poison](#types)
 - Health points: 20
-- Attack factor: level+3
-- Defense factor: level
-- Initiative: level+3
+- Attack factor: 3
+- Defense factor: 0
+- Initiative: 3
 - Missing chance: 0
 - Rarity: 1
 - Loosing experience: 2
@@ -794,6 +967,10 @@ A dangerous snake Pokete.
    + [Choker](#chocer)
    + [Bite](#bite)
    + [Poison bite](#poison-bite)
+- Can be found in:
+   + Route 5
+   + Route 6
+   + Big mountain see
 - Evolves to [Choka](#choka) at level 30
 ### Stone Poketes
 #### Bigstone
@@ -809,9 +986,9 @@ A big and heavy stone made from one of the hardest stones.
 
 - Type: [Stone](#types)
 - Health points: 30
-- Attack factor: level+2
-- Defense factor: level+13
-- Initiative: level+5
+- Attack factor: 2
+- Defense factor: 13
+- Initiative: 5
 - Missing chance: 0
 - Rarity: 0.3
 - Loosing experience: 5
@@ -819,7 +996,10 @@ A big and heavy stone made from one of the hardest stones.
    + [Snooze](#snooze)
    + [Politure](#politure)
    + [Brick throw](#brick-throw)
+- Can be found in:
+   + Nowhere
 - Does not evolve
+
 
 #### Diamondos
 A precious diamond, that can only be found in the darkest caves.
@@ -834,9 +1014,9 @@ A precious diamond, that can only be found in the darkest caves.
 
 - Type: [Stone](#types)
 - Health points: 20
-- Attack factor: level+2
-- Defense factor: level+15
-- Initiative: level+2
+- Attack factor: 2
+- Defense factor: 15
+- Initiative: 2
 - Missing chance: 0.1
 - Rarity: 1
 - Loosing experience: 2
@@ -844,7 +1024,10 @@ A precious diamond, that can only be found in the darkest caves.
    + [Tackle](#tackle)
    + [Politure](#politure)
    + [Dazzle](#dazzle)
+- Can be found in:
+   + Nowhere
 - Does not evolve
+
 
 #### Lilstone
 A small but powerful stone Pokete that lives in the mountains.
@@ -859,9 +1042,9 @@ A small but powerful stone Pokete that lives in the mountains.
 
 - Type: [Stone](#types)
 - Health points: 20
-- Attack factor: level+1
-- Defense factor: level+2
-- Initiative: level+3
+- Attack factor: 1
+- Defense factor: 2
+- Initiative: 3
 - Missing chance: 0
 - Rarity: 1
 - Loosing experience: 2
@@ -869,6 +1052,10 @@ A small but powerful stone Pokete that lives in the mountains.
    + [Tackle](#tackle)
    + [Politure](#politure)
    + [Pepple fire](#pepple-fire)
+- Can be found in:
+   + Nice Town cave
+   + Dark cave
+   + Big mountain cave
 - Evolves to [Bigstone](#bigstone) at level 25
 
 #### Poundi
@@ -884,9 +1071,9 @@ A powerful and heavy stone Pokete that lives in mountain caves.
 
 - Type: [Stone](#types)
 - Health points: 25
-- Attack factor: level+2
-- Defense factor: level+3
-- Initiative: level+4
+- Attack factor: 2
+- Defense factor: 3
+- Initiative: 4
 - Missing chance: 0
 - Rarity: 0.7
 - Loosing experience: 4
@@ -894,7 +1081,11 @@ A powerful and heavy stone Pokete that lives in mountain caves.
    + [Tackle](#tackle)
    + [Politure](#politure)
    + [Earch quake](#earch-quake)
+- Can be found in:
+   + Big mountain see
+   + Big mountain cave
 - Does not evolve
+
 
 #### Steini
 A squared stone that can casually be found on the ground.
@@ -909,9 +1100,9 @@ A squared stone that can casually be found on the ground.
 
 - Type: [Stone](#types)
 - Health points: 25
-- Attack factor: level+2
-- Defense factor: level+4
-- Initiative: level+5
+- Attack factor: 2
+- Defense factor: 4
+- Initiative: 5
 - Missing chance: 0
 - Rarity: 1
 - Loosing experience: 3
@@ -919,7 +1110,19 @@ A squared stone that can casually be found on the ground.
    + [Tackle](#tackle)
    + [Politure](#politure)
    + [Brick throw](#brick-throw)
+- Can be found in:
+   + Nice Town cave
+   + Route 1
+   + Josi Town
+   + Josi Lake
+   + Mysterious cave
+   + Route 2
+   + Dark cave
+   + Abandoned village
+   + Route 3
+   + Big mountain cave
 - Does not evolve
+
 ### Undead Poketes
 #### Angrilo
 A ghost Pokete that will scare your pants off.
@@ -934,9 +1137,9 @@ A ghost Pokete that will scare your pants off.
 
 - Type: [Undead](#types)
 - Health points: 25
-- Attack factor: level+3
-- Defense factor: level+2
-- Initiative: level+7
+- Attack factor: 3
+- Defense factor: 2
+- Initiative: 7
 - Missing chance: 0
 - Rarity: 0.6
 - Loosing experience: 4
@@ -945,7 +1148,10 @@ A ghost Pokete that will scare your pants off.
    + [Mind blow](#mind-blow)
    + [Wet slap](#wet-slap)
    + [Heart touch](#heart-touch)
+- Can be found in:
+   + Nowhere
 - Does not evolve
+
 
 #### Confuso
 A ball floating around in dark woods and caves, that will confuse the shit out of you.
@@ -960,15 +1166,18 @@ A ball floating around in dark woods and caves, that will confuse the shit out o
 
 - Type: [Undead](#types)
 - Health points: 20
-- Attack factor: level+1
-- Defense factor: level+1
-- Initiative: level+2
+- Attack factor: 1
+- Defense factor: 1
+- Initiative: 2
 - Missing chance: 0.1
 - Rarity: 0.5
 - Loosing experience: 6
 - Attacks:
    + [Confusion](#confusion)
+- Can be found in:
+   + Route 7
 - Does not evolve
+
 
 #### Gobost
 A scary ghost Pokete that lives in caves and old houses.
@@ -983,9 +1192,9 @@ A scary ghost Pokete that lives in caves and old houses.
 
 - Type: [Undead](#types)
 - Health points: 20
-- Attack factor: level+2
-- Defense factor: level+1
-- Initiative: level+6
+- Attack factor: 2
+- Defense factor: 1
+- Initiative: 6
 - Missing chance: 0
 - Rarity: 1
 - Loosing experience: 3
@@ -993,6 +1202,10 @@ A scary ghost Pokete that lives in caves and old houses.
    + [Tackle](#tackle)
    + [Mind blow](#mind-blow)
    + [Heart touch](#heart-touch)
+- Can be found in:
+   + Dark cave
+   + Abandoned house
+   + Route 7
 - Evolves to [Angrilo](#angrilo) at level 25
 ### Water Poketes
 #### Blub
@@ -1008,9 +1221,9 @@ Very delicious and low fat water Pokete.
 
 - Type: [Water](#types)
 - Health points: 20
-- Attack factor: level+2
-- Defense factor: level+1
-- Initiative: level+1
+- Attack factor: 2
+- Defense factor: 1
+- Initiative: 1
 - Missing chance: 0
 - Rarity: 1
 - Loosing experience: 5
@@ -1018,7 +1231,12 @@ Very delicious and low fat water Pokete.
    + [Tackle](#tackle)
    + [Bubble bomb](#bubble-bomb)
    + [Bubble shield](#bubble-shield)
+- Can be found in:
+   + Josi Lake
+   + Big mountain see
+   + Rock-ville
 - Does not evolve
+
 
 #### Clampi
 A shell that lives deep in the see or near bays, that's pretty hard to crack.
@@ -1033,9 +1251,9 @@ A shell that lives deep in the see or near bays, that's pretty hard to crack.
 
 - Type: [Water](#types)
 - Health points: 25
-- Attack factor: level+2
-- Defense factor: level+7
-- Initiative: level+3
+- Attack factor: 2
+- Defense factor: 7
+- Initiative: 3
 - Missing chance: 0
 - Rarity: 0.8
 - Loosing experience: 5
@@ -1043,7 +1261,11 @@ A shell that lives deep in the see or near bays, that's pretty hard to crack.
    + [Tackle](#tackle)
    + [Bubble bomb](#bubble-bomb)
    + [Shell pinch](#shell-pinch)
+- Can be found in:
+   + Route 3
+   + Big mountain see
 - Does not evolve
+
 
 #### Karpi
 A very harmless water Pokete that can be found everywhere.
@@ -1058,15 +1280,21 @@ A very harmless water Pokete that can be found everywhere.
 
 - Type: [Water](#types)
 - Health points: 15
-- Attack factor: level
-- Defense factor: level/2
-- Initiative: level
+- Attack factor: 0
+- Defense factor: 0
+- Initiative: 0
 - Missing chance: 0
 - Rarity: 3
 - Loosing experience: 1
 - Attacks:
    + [Tackle](#tackle)
+- Can be found in:
+   + Josi Lake
+   + Route 3
+   + Big mountain see
+   + Rock-ville
 - Does not evolve
+
 
 ## Attacks
 Those are all attacks present in the game.
@@ -1398,7 +1626,7 @@ Wipes through the enemy's face.
 - Effect: None
 
 #### Meat skewer
-Drills the horn deep in the enemy's flesh.
+Drills a horn deep in the enemy's flesh.
 
 - Type: [Normal](#types)
 - Minimum Level: 0
@@ -1417,7 +1645,27 @@ Makes the enemy sleepy.
 - Attack points: 15
 - Effect: [Sleep](#sleep)
 
+#### Supercow power
+Makes the Pokete angry and strong.
+
+- Type: [Normal](#types)
+- Minimum Level: 10
+- Attack factor: 0
+- Missing chance: 0
+- Attack points: 10
+- Effect: None
+
 ### Plant attacks
+#### Special smell
+Spreads a special smell that will make the enemy confused and very happy.
+
+- Type: [Plant](#types)
+- Minimum Level: 0
+- Attack factor: 0
+- Missing chance: 0
+- Attack points: 10
+- Effect: [Confusion](#confusion)
+
 #### Apple drop
 Lets an apple drop on the enemy's head.
 
@@ -1684,19 +1932,20 @@ Pinches the enemy with its strong shells.
 
 ## Types
 Those are all the Pokete/Attack types that are present in the game with all their (in)effectivities against other types.
-Type|Effective against|Ineffective against
----|---|---
-Normal||
-Stone|Flying, Fire|Plant
-Plant|Stone, Ground, Water|Fire, Ice
-Water|Stone, Flying, Fire|Plant, Ice
-Fire|Flying, Plant, Undead, Ice|Stone, Water
-Ground|Normal|Flying, Ice
-Electro|Stone, Flying|Ground
-Flying|Plant|Stone
-Undead|Normal, Ground, Plant, Water, Poison|Fire
-Ice|Water, Plant, Ground|Fire
-Poison|Normal|Undead
+
+|Type|Effective against|Ineffective against|
+|---|---|---|
+|Normal|||
+|Stone|Flying, Fire|Plant|
+|Plant|Stone, Ground, Water|Fire, Ice|
+|Water|Stone, Flying, Fire|Plant, Ice|
+|Fire|Flying, Plant, Undead, Ice|Stone, Water|
+|Ground|Normal|Flying, Ice|
+|Electro|Stone, Flying|Ground|
+|Flying|Plant|Stone|
+|Undead|Normal, Ground, Plant, Water, Poison|Fire|
+|Ice|Water, Plant, Ground|Fire|
+|Poison|Normal|Undead|
 
 ## Items
 Those are all items present in the game, that can be traded or found.
