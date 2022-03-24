@@ -26,6 +26,7 @@ You can find different versions of this wiki:
        5. [Schmetterling](#schmetterling)
        6. [Vogli](#vogli)
        7. [Voglo](#voglo)
+       8. [Voglus](#voglus)
    4. [Ground Poketes](#ground-poketes)
        1. [Dicki](#dicki)
        2. [Dicko](#dicko)
@@ -38,7 +39,8 @@ You can find different versions of this wiki:
        1. [Hornita](#hornita)
        2. [Horny](#horny)
        3. [Mowcow](#mowcow)
-       4. [Rato](#rato)
+       4. [Ratatat](#ratatat)
+       5. [Rato](#rato)
    7. [Plant Poketes](#plant-poketes)
        1. [Bushy](#bushy)
        2. [Megapois](#megapois)
@@ -59,10 +61,13 @@ You can find different versions of this wiki:
        1. [Angrilo](#angrilo)
        2. [Confuso](#confuso)
        3. [Gobost](#gobost)
+       4. [Saugh](#saugh)
    11. [Water Poketes](#water-poketes)
        1. [Blub](#blub)
        2. [Clampi](#clampi)
-       3. [Karpi](#karpi)
+       3. [Crabbat](#crabbat)
+       4. [Karpi](#karpi)
+       5. [Rustacean](#rustacean)
 2. [Attacks](#attacks)
    1. [Electro attacks](#electro-attacks)
        1. [Charging](#charging)
@@ -127,6 +132,7 @@ You can find different versions of this wiki:
        5. [Pepple fire](#pepple-fire)
        6. [Politure](#politure)
        7. [Rock smash](#rock-smash)
+       8. [Sand throw](#sand-throw)
    10. [Undead attacks](#undead-attacks)
        1. [Confusion](#confusion)
        2. [Heart touch](#heart-touch)
@@ -211,9 +217,8 @@ A fiery wolf straight from hell, that likes to burn 11 years old butts of.
    + [Ash throw](#ash-throw)
 - Can be found in:
    + Route 1
-   + Josi Town
-   + Josi Lake
-   + Abandoned village
+   + Sunnydale
+   + Sunnydale Lake
    + Route 3
 - Evolves to [Wolfiro](#wolfiro) at level 25
 
@@ -446,10 +451,9 @@ A very aggressive bird Pokete that can only be found in the woods.
    + [Brooding](#brooding)
 - Can be found in:
    + Route 1
-   + Josi Town
-   + Josi Lake
+   + Sunnydale
+   + Sunnydale Lake
    + Route 2
-   + Abandoned village
    + Route 3
    + Route 4
    + Deepens forest
@@ -457,6 +461,34 @@ A very aggressive bird Pokete that can only be found in the woods.
    + Route 6
    + Mowcow meadow
    + The fields of Agrawos
+- Evolves to [Voglus](#voglus) at level 35
+
+#### Voglus
+A very aggressive and hard to find bird Pokete.
+
+```
+    /      
+   >´}     
+    WWW'   
+    ||     
+
+```
+
+- Type: [Flying](#types)
+- Health points: 25
+- Attack factor: 9
+- Defense factor: 3
+- Initiative: 8
+- Missing chance: 0
+- Rarity: 0.2
+- Loosing experience: 5
+- Attacks:
+   + [Tackle](#tackle)
+   + [Power pick](#power-pick)
+   + [Storm gust](#storm-gust)
+   + [Brooding](#brooding)
+- Can be found in:
+   + Nowhere
 - Does not evolve
 
 ### Ground Poketes
@@ -653,8 +685,8 @@ An majestic horse that is always looking for something to pick with its horn.
    + [Tail wipe](#tail-wipe)
 - Can be found in:
    + Route 1
-   + Josi Town
-   + Josi Lake
+   + Sunnydale
+   + Sunnydale Lake
    + Route 5
    + Route 6
 - Does not evolve
@@ -713,6 +745,34 @@ A cow-like creature found on meadows.
 - Does not evolve
 
 
+#### Ratatat
+A damn dangerous and enourmous rat, that will bite of your leg.
+
+```
+   ^---^   
+   \* */   
+   >VvV<   
+    ^^^    
+
+```
+
+- Type: [Normal](#types)
+- Health points: 25
+- Attack factor: 7
+- Defense factor: 3
+- Initiative: 7
+- Missing chance: 0
+- Rarity: 0.7
+- Loosing experience: 2
+- Attacks:
+   + [Tackle](#tackle)
+   + [Tail wipe](#tail-wipe)
+   + [Power bite](#power-bite)
+- Can be found in:
+   + Nowhere
+- Does not evolve
+
+
 #### Rato
 An annoying rat.
 
@@ -739,14 +799,13 @@ An annoying rat.
    + Nice Town
    + Nice Town cave
    + Route 1
-   + Josi Town
-   + Josi Lake
+   + Sunnydale
+   + Sunnydale Lake
    + Abandoned house
    + Route 4
    + Deepens forest
    + Big mountain see
-- Does not evolve
-
+- Evolves to [Ratatat](#ratatat) at level 25
 ### Plant Poketes
 #### Bushy
 A bush, and just a bush. But watch out!
@@ -971,6 +1030,7 @@ A dangerous snake Pokete.
    + Route 5
    + Route 6
    + Big mountain see
+   + Sunny Beach
 - Evolves to [Choka](#choka) at level 30
 ### Stone Poketes
 #### Bigstone
@@ -1113,12 +1173,11 @@ A squared stone that can casually be found on the ground.
 - Can be found in:
    + Nice Town cave
    + Route 1
-   + Josi Town
-   + Josi Lake
+   + Sunnydale
+   + Sunnydale Lake
    + Mysterious cave
    + Route 2
    + Dark cave
-   + Abandoned village
    + Route 3
    + Big mountain cave
 - Does not evolve
@@ -1204,9 +1263,38 @@ A scary ghost Pokete that lives in caves and old houses.
    + [Heart touch](#heart-touch)
 - Can be found in:
    + Dark cave
+   + Abandoned village
    + Abandoned house
    + Route 7
 - Evolves to [Angrilo](#angrilo) at level 25
+
+#### Saugh
+The dark firy souls of those who got burned to death by the hot sun!
+
+```
+           
+    .,     
+  ,*..*.   
+ ...,..,.  
+
+```
+
+- Type: [Undead](#types)
+- Health points: 20
+- Attack factor: 4
+- Defense factor: 2
+- Initiative: 5
+- Missing chance: 1
+- Rarity: 0.5
+- Loosing experience: 4
+- Attacks:
+   + [Mind blow](#mind-blow)
+   + [Fire ball](#fire-ball)
+   + [Sand throw](#sand-throw)
+- Can be found in:
+   + Sunny Beach
+- Does not evolve
+
 ### Water Poketes
 #### Blub
 Very delicious and low fat water Pokete.
@@ -1232,9 +1320,10 @@ Very delicious and low fat water Pokete.
    + [Bubble bomb](#bubble-bomb)
    + [Bubble shield](#bubble-shield)
 - Can be found in:
-   + Josi Lake
+   + Sunnydale Lake
    + Big mountain see
    + Rock-ville
+   + Sunny Beach
 - Does not evolve
 
 
@@ -1264,8 +1353,36 @@ A shell that lives deep in the see or near bays, that's pretty hard to crack.
 - Can be found in:
    + Route 3
    + Big mountain see
-- Does not evolve
+   + Sunny Beach
+- Evolves to [Crabbat](#crabbat) at level 20
 
+#### Crabbat
+A crusty Pokete that loves to pinch big toes.
+
+```
+ (  ___  ) 
+  \-* *-/  
+   ^   ^   
+           
+
+```
+
+- Type: [Water](#types)
+- Health points: 30
+- Attack factor: 3
+- Defense factor: 8
+- Initiative: 4
+- Missing chance: 0
+- Rarity: 0.8
+- Loosing experience: 5
+- Attacks:
+   + [Tackle](#tackle)
+   + [Bubble gun](#bubble-gun)
+   + [Earch quake](#earch-quake)
+   + [Shell pinch](#shell-pinch)
+- Can be found in:
+   + Sunny Beach
+- Evolves to [Rustacean](#rustacean) at level 40
 
 #### Karpi
 A very harmless water Pokete that can be found everywhere.
@@ -1289,10 +1406,40 @@ A very harmless water Pokete that can be found everywhere.
 - Attacks:
    + [Tackle](#tackle)
 - Can be found in:
-   + Josi Lake
+   + Sunnydale Lake
    + Route 3
    + Big mountain see
    + Rock-ville
+   + Sunny Beach
+- Does not evolve
+
+
+#### Rustacean
+A crusty Pokete that will pinch your toe, and check whether or not you borrowed something.
+
+```
+ {  ^^^  } 
+  \-* *-/  
+   ^   ^   
+           
+
+```
+
+- Type: [Water](#types)
+- Health points: 35
+- Attack factor: 4
+- Defense factor: 9
+- Initiative: 5
+- Missing chance: 0
+- Rarity: 0.5
+- Loosing experience: 5
+- Attacks:
+   + [Toe Breaker](#toe-breaker)
+   + [Bubble gun](#bubble-gun)
+   + [Earch quake](#earch-quake)
+   + [Shell pinch](#shell-pinch)
+- Can be found in:
+   + Nowhere
 - Does not evolve
 
 
@@ -1788,6 +1935,16 @@ Fires pepples at the enemy and makes it blind.
 - Attack points: 5
 - Effect: None
 
+#### Sand throw
+Throws sand at the enemy and makes it blind.
+
+- Type: [Stone](#types)
+- Minimum Level: 0
+- Attack factor: 1
+- Missing chance: 0
+- Attack points: 5
+- Effect: None
+
 #### Politure
 Upgrades defense and attack points.
 
@@ -2002,7 +2159,7 @@ Paralyses the enemy and stops it from attacking. This is reverted randomly.
 Makes the enemy fall asleep and stops it from attacking. This is reverted randomly.
 
 ### Burning
-Sets the enemy on fire and damages the enemy with 2 HP every round. This is reverted randomly.
+Sets the enemy on fire and damages them with 2 HP every round. This is reverted randomly.
 
 ### Poison
 Poisons the enemy and damages the enemy with 1 HP every round. This is reverted randomly.

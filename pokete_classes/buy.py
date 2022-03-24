@@ -1,19 +1,28 @@
+"""Classes related to buing stuff"""
+
 import time
 import scrap_engine as se
+from pokete_general_use_fns import liner
+from .loops import std_loop
 from .ui_elements import Box, ChooseBox
-from pokete_general_use_fns import std_loop, liner
+from .inv_items import invitems
+from .event import _ev
 
 
 class Buy:
-    """Menu to buy items in, is triggered in shop"""
+    """Menu to buy items in, is triggered in shop
+    Args:
+        figure: Figure object
+        _map: The se.Map the menu is shown on"""
 
-    def __init__(self, figure, Inv, _map):
+    def __init__(self, figure, _map):
         self.box = ChooseBox(_map.height - 3, 35, "Shop")
         self.box2 = Box(7, 21)
         self.fig = figure
         self.map = _map
-        self.items = [Inv.poketeball, Inv.superball, Inv.healing_potion,
-                      Inv.super_potion, Inv.ap_potion]
+        self.items = [invitems.poketeball, invitems.superball,
+                      invitems.healing_potion,
+                      invitems.super_potion, invitems.ap_potion]
         self.box.add_c_obs([se.Text(f"{obj.pretty_name} : {obj.price}$")
                             for obj in self.items])
         self.money_label = se.Text(f"{figure.get_money()}$")
@@ -23,27 +32,27 @@ class Buy:
                         self.box.width - 2 - len(self.money_label.text), 0)
         self.box2.add_ob(self.desc_label, 1, 1)
 
-    def __call__(self, ev):
+    def __call__(self):
         """Opens the buy menu"""
-        ev.clear()
+        _ev.clear()
         with self.box.add(self.map, self.map.width - 35, 0):
             self.box2.add(self.map, self.box.x - 19, 3)
             self.rechar()
             self.map.show()
             while True:
-                if ev.get() in ["'s'", "'w'"]:
-                    self.box.input(ev.get())
+                if _ev.get() in ["'s'", "'w'"]:
+                    self.box.input(_ev.get())
                     self.rechar()
-                    ev.clear()
-                elif ev.get() in ["Key.esc", "'q'"]:
+                    _ev.clear()
+                elif _ev.get() in ["Key.esc", "'q'"]:
                     break
-                elif ev.get() == "Key.enter":
+                elif _ev.get() == "Key.enter":
                     obj = self.items[self.box.index.index]
                     if self.fig.get_money() - obj.price >= 0:
                         self.fig.add_money(-obj.price)
                         self.fig.give_item(obj.name)
-                    ev.clear()
-                std_loop(ev)
+                    _ev.clear()
+                std_loop()
                 time.sleep(0.05)
                 self.map.show()
         self.box2.remove()

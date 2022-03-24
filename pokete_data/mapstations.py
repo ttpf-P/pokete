@@ -45,8 +45,7 @@ stations = {
             "additionals": [],
             "width": 2,
             "height": 1,
-            "desc": "The great Josi Town, home of the Josis an old race of \
-amazonians.",
+            "desc": "A small sunny village.",
             "a_next": "playmap_2",
             "w_next": "playmap_4",
             "s_next": "playmap_6",
@@ -61,7 +60,7 @@ amazonians.",
             "additionals": ["playmap_5"],
             "width": 1,
             "height": 3,
-            "desc": "The shores of the great Josi lake.",
+            "desc": "The shores of the great Sunnydale lake.",
             "s_next": "playmap_3",
             "d_next": "playmap_28"
         },
@@ -223,7 +222,8 @@ forest, populated by thousands of people and cultural center of the region.",
 around the Big mountain. With the Rocky hotel it's also a tourist \
 hotspot.",
             "s_next": "playmap_19",
-            "d_next": "playmap_33"
+            "d_next": "playmap_33",
+            "w_next": "playmap_40"
         },
         "add": {
             "x": 18,
@@ -284,6 +284,19 @@ of the most spectacular.",
         "add": {
             "x": 22,
             "y": 2
+        }
+    },
+    "playmap_40": {
+        "gen": {
+            "additionals": [],
+            "width": 2,
+            "height": 1,
+            "desc": "A Great beach, with great weather, always.",
+            "s_next": "playmap_21",
+        },
+        "add": {
+            "x": 18,
+            "y": 1
         }
     },
 }

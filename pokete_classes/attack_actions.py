@@ -1,5 +1,10 @@
 class AttackActions:
-    """This class contains all actions callable by an attack"""
+    """This class contains all actions callable by an attack
+    All these methods belong to one or more attacks and follow the following
+    pattern:
+        ARGS:
+            obj: The Poke object that attacks
+            enem: The Poke object that is attacked"""
 
     def cry(self, obj, enem):
         enem.miss_chance += 1
@@ -42,3 +47,6 @@ class AttackActions:
         enem.hp -= 1
         obj.hp += 1 if obj.hp+1 <= obj.full_hp else 0
 
+
+if __name__ == "__main__":
+    print("\033[31;1mDo not execute this!\033[0m")

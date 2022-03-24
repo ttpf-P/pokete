@@ -1,20 +1,24 @@
+"""Contains all moves a Pokete can fullfill"""
+
 import time
 import scrap_engine as se
 from .color import Color
 
 class Moves:
-    """This class contains all attack moves"""
+    """This class contains all attack moves
+    ARGS:
+        poke: The Poke that does the moves"""
 
     def __init__(self, poke):
         self.poke = poke
 
     def attack(self):
         """Attack move"""
-        for i, j, t in zip([3, -3], [2, -2], [0.3, 0]):
+        for i, j, _t in zip([3, -3], [2, -2], [0.3, 0]):
             self.poke.ico.move(i if self.poke.player
                                else -i, -j if self.poke.player else j)
             self.poke.ico.map.show()
-            time.sleep(t)
+            time.sleep(_t)
 
     def pound(self):
         """Pound move"""
@@ -41,7 +45,9 @@ class Moves:
         del line
 
     def throw(self, txt="#"):
-        """Throw move"""
+        """Throw move
+        ARGS:
+            txt: The char that moves across the screen"""
         if self.poke.enem == self.poke:
             return
         line = se.Line(" ",
@@ -54,8 +60,8 @@ class Moves:
                  self.poke.ico.x + (11 if self.poke.player else -1),
                  self.poke.ico.y + 1)
         self.poke.ico.map.show()
-        for i in range(len(line.obs)):
-            line.obs[i].rechar(txt)
+        for i, obj in enumerate(line.obs):
+            obj.rechar(txt)
             if i != 0:
                 line.obs[i - 1].rechar(line.char)
             time.sleep(0.05)
@@ -70,11 +76,12 @@ class Moves:
     def shine(self, ico=Color.thicc + Color.green + "*" + Color.reset):
         """Shine Move"""
         shines = [se.Object(ico) for _ in range(4)]
-        for i, x, y in zip(shines, [self.poke.ico.x - 1, self.poke.ico.x + 11,
-                                    self.poke.ico.x - 1, self.poke.ico.x + 11],
-                           [self.poke.ico.y, self.poke.ico.y, 
-                            self.poke.ico.y + 3, self.poke.ico.y + 3]):
-            i.add(self.poke.ico.map, x, y)
+        for i, _x, _y in zip(shines,
+                             [self.poke.ico.x - 1, self.poke.ico.x + 11,
+                              self.poke.ico.x - 1, self.poke.ico.x + 11],
+                             [self.poke.ico.y, self.poke.ico.y,
+                              self.poke.ico.y + 3, self.poke.ico.y + 3]):
+            i.add(self.poke.ico.map, _x, _y)
             self.poke.ico.map.show()
             time.sleep(0.2)
         time.sleep(0.2)
@@ -84,7 +91,8 @@ class Moves:
 
     def downgrade(self):
         """Downgrade move"""
-        self.poke.enem.moves.shine(ico=Color.thicc + Color.red + "-" + Color.reset)
+        self.poke.enem.moves.shine(ico=Color.thicc + Color.red + "-"
+                                   + Color.reset)
 
 
 if __name__ == "__main__":

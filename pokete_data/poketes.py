@@ -1,9 +1,10 @@
-# Here starts to definition of all the Poketes
-# If you want to contribute Poketes, you have to keep in mind, that "ico" can be max 11x4 chars big
-# and that the max for attacks is (until now) 4
-# All attributes have to be present make a Pokete work
-# A type has to be present
-# Hornita was inspired and partly designed by Pia <pialandrath@gmail.com>
+"""Here starts to definition of all the Poketes
+  If you want to contribute Poketes, you have to keep in mind, that "ico"
+  can be max 11x4 chars big
+  and that the max for attacks is (until now) 4
+  All attributes have to be present make a Pokete work
+  A type has to be present
+  Hornita was inspired and partly designed by Pia <pialandrath@gmail.com>"""
 
 pokes = {
     "__fallback__": {
@@ -41,7 +42,7 @@ pokes = {
         "evolve_lvl": 0,
         "initiative": 5,
         "ico": [{
-            "txt": """ +-------+
+            "txt": r""" +-------+
  | o   o |
  |  www  |
  +-------+ """,
@@ -63,7 +64,7 @@ pokes = {
         "evolve_lvl": 0,
         "initiative": 2,
         "ico": [{
-            "txt": """    ^__^
+            "txt": r"""    ^__^
     (oo)
     (__)""",
             "esc": None}],
@@ -84,7 +85,7 @@ pokes = {
         "evolve_lvl": 0,
         "initiative": 5,
         "ico": [{
-            "txt": """+---------+
+            "txt": r"""+---------+
 |  o   o  |
 |   ---   |
 +---------+""",
@@ -106,7 +107,7 @@ pokes = {
         "evolve_lvl": 0,
         "initiative": 4,
         "ico": [{
-            "txt": """   A-A-A
+            "txt": r"""   A-A-A
   < o o >
   < --- >
    VvVvV""",
@@ -128,7 +129,7 @@ pokes = {
         "evolve_lvl": 25,
         "initiative": 3,
         "ico": [{
-            "txt": """
+            "txt": r"""
    _____
    |'ᵕ'|
    ‾‾‾‾‾""",
@@ -150,7 +151,7 @@ pokes = {
         "evolve_lvl": 0,
         "initiative": 3,
         "ico": [{
-            "txt": """
+            "txt": r"""
     (@)
      |
     \|/""",
@@ -172,11 +173,39 @@ pokes = {
         "evolve_lvl": 0,
         "initiative": 2,
         "ico": [{
-            "txt": """    \ /
+            "txt": r"""    \ /
     \|/
     \|/
      |""",
             "esc": None}],
+    },
+    "saugh": {
+        "name": "Saugh",
+        "hp": 20,
+        "atc": 4,
+        "defense": 2,
+        "attacks": ["mind_blow", "fire_ball", "sand_throw"],
+        "pool": ["hiding"],
+        "miss_chance": 1,
+        "desc": "The dark firy souls of those who got burned to death by the hot sun!",
+        "lose_xp": 4,
+        "rarity": 0.5,
+        "types": ["undead", "fire"],
+        "evolve_poke": "",
+        "evolve_lvl": 0,
+        "initiative": 5,
+        "ico": [{
+            "txt": r"""
+    .,
+  , .. .
+ ...,..,.""",
+            "esc": ["yellow"]
+                }, {
+            "txt": r"""
+
+   *  *""",
+            "esc": ["thicc", "red"]
+                }],
     },
     "gobost": {
         "name": "Gobost",
@@ -194,7 +223,7 @@ pokes = {
         "evolve_lvl": 25,
         "initiative": 6,
         "ico": [{
-            "txt": """ .░░░░░░░.
+            "txt": r""" .░░░░░░░.
  ░░o░░░o░░
  ░░░░░░░░░
  ░ ░ ░ ░ ░""",
@@ -216,7 +245,7 @@ pokes = {
         "evolve_lvl": 0,
         "initiative": 7,
         "ico": [{
-            "txt": """ .░░░░░░░.
+            "txt": r""" .░░░░░░░.
  ░░\░░░/░░
  .░░( )░░.
 .         .""",
@@ -238,7 +267,7 @@ pokes = {
         "initiative": 6,
         "evolve_lvl": 20,
         "ico": [{
-            "txt": """    A
+            "txt": r"""    A
    <')
     www*
     ||     """,
@@ -256,15 +285,40 @@ pokes = {
         "lose_xp": 3,
         "rarity": 0.8,
         "types": ["flying", "normal", "bird"],
-        "evolve_poke": "",
-        "evolve_lvl": 0,
+        "evolve_poke": "voglus",
+        "evolve_lvl": 35,
         "initiative": 7,
         "ico": [{
-            "txt": """    ?
+            "txt": r"""    ?
    >´)
     www*
     ||     """,
             "esc": None}]
+    },
+    "voglus": {
+        "name": "Voglus",
+        "hp": 25,
+        "atc": 9,
+        "defense": 3,
+        "attacks": ["tackle", "power_pick", "storm_gust", "brooding"],
+        "pool": ["cry"],
+        "miss_chance": 0,
+        "desc": "A very aggressive and hard to find bird Pokete.",
+        "lose_xp": 5,
+        "rarity": 0.2,
+        "types": ["flying", "normal", "bird"],
+        "evolve_poke": "",
+        "evolve_lvl": 0,
+        "initiative": 8,
+        "ico": [{
+            "txt": r"""    /
+   > }
+    WWW'
+    ||""",
+            "esc": None}, {
+            "txt": """
+    ´""",
+            "esc": ["thicc", "red"]}]
     },
     "ostri": {
         "name": "Ostri",
@@ -274,7 +328,8 @@ pokes = {
         "attacks": ["tackle", "eye_pick", "brooding"],
         "pool": ["cry"],
         "miss_chance": 0,
-        "desc": "A very aggressive bird Pokete that lives near deserts and will try to pick out your eyes.",
+        "desc": "A very aggressive bird Pokete that lives near deserts and \
+will try to pick out your eyes.",
         "rarity": 0.6,
         "lose_xp": 4,
         "types": ["flying", "normal", "bird"],
@@ -282,7 +337,7 @@ pokes = {
         "evolve_lvl": 0,
         "initiative": 7,
         "ico": [{
-            "txt": """   !
+            "txt": r"""   !
   >´)
     \www'
      ||""",
@@ -304,7 +359,7 @@ pokes = {
         "evolve_lvl": 0,
         "initiative": 0,
         "ico": [{
-            "txt": """
+            "txt": r"""
 
   <°))))><
            """,
@@ -326,7 +381,7 @@ pokes = {
         "evolve_lvl": 30,
         "initiative": 3,
         "ico": [{
-            "txt": """  >'({{{
+            "txt": r"""  >'({{{
   }}}}}}}
  {{{{{{{{{
            """,
@@ -348,10 +403,10 @@ pokes = {
         "evolve_lvl": 0,
         "initiative": 4,
         "ico": [{
-            "txt": """ _______
-/____ * \\
- (   \   \\
-\______   \\""",
+            "txt": r""" _______
+/____ * \
+ (   \   \
+\______   \ """,
             "esc": None}]
     },
     "treenator": {
@@ -370,7 +425,7 @@ pokes = {
         "evolve_lvl": 0,
         "initiative": 2,
         "ico": [{
-            "txt": """    (()
+            "txt": r"""    (()
    (()))
      H
      H""",
@@ -392,9 +447,9 @@ pokes = {
         "evolve_lvl": 20,
         "initiative": 6,
         "ico": [{
-            "txt": """    ___
+            "txt": r"""    ___
 WW\/* *\/WW
-   \\v-v/""",
+   \v-v/""",
             "esc": None}]
     },
     "bator": {
@@ -413,10 +468,10 @@ WW\/* *\/WW
         "evolve_lvl": 0,
         "initiative": 8,
         "ico": [{
-            "txt": """    ___
+            "txt": r"""    ___
 WW\/o o\/WW
    |v-v|
-   \\___/""",
+   \___/""",
             "esc": None}]
     },
     "blub": {
@@ -435,8 +490,8 @@ WW\/o o\/WW
         "evolve_lvl": 0,
         "initiative": 1,
         "ico": [{
-            "txt": """  _____
- / o   \\
+            "txt": r"""  _____
+ / o   \
  >   v  ><
  \_____/""",
             "esc": None}]
@@ -457,7 +512,7 @@ WW\/o o\/WW
         "evolve_lvl": 0,
         "initiative": 3,
         "ico": [{
-            "txt": """   ,___,
+            "txt": r"""   ,___,
    {o,o}
    /)_)
     ""
@@ -476,14 +531,39 @@ WW\/o o\/WW
         "lose_xp": 2,
         "rarity": 1.3,
         "types": ["normal"],
-        "evolve_poke": "",
-        "evolve_lvl": 0,
+        "evolve_poke": "ratatat",
+        "evolve_lvl": 25,
         "initiative": 6,
         "ico": [{
-            "txt": """   ^---^
+            "txt": r"""   ^---^
    \o o/
    >\./<""",
             "esc": None}]
+    },
+    "ratatat": {
+        "name": "Ratatat",
+        "hp": 25,
+        "atc": 7,
+        "defense": 3,
+        "attacks": ["tackle", "tail_wipe", "power_bite"],
+        "pool": ["bite"],
+        "miss_chance": 0,
+        "desc": "A damn dangerous and enourmous rat, that will bite of your leg.",
+        "lose_xp": 2,
+        "rarity": 0.7,
+        "types": ["normal"],
+        "evolve_poke": "",
+        "evolve_lvl": 0,
+        "initiative": 7,
+        "ico": [{
+            "txt": r"""   ^---^
+   \   /
+   >VvV<
+    ^^^""",
+            "esc": None}, {
+            "txt": r"""
+    * *""",
+            "esc": ["thicc", "green"]}]
     },
     "hornita": {
         "name": "Hornita",
@@ -501,10 +581,10 @@ WW\/o o\/WW
         "evolve_lvl": 0,
         "initiative": 3,
         "ico": [{
-            "txt": """ \\
+            "txt": r""" \
  =')~
    (¯¯¯¯)~
-   //¯¯\\\\""",
+   //¯¯\\ """,
             "esc": None}]
     },
     "horny": {
@@ -523,10 +603,10 @@ WW\/o o\/WW
         "evolve_lvl": 20,
         "initiative": 4,
         "ico": [{
-            "txt": """  ,
+            "txt": r"""  ,
  =')
    (¯¯¯)~
-   //¯\\\\""",
+   //¯\\ """,
             "esc": None}]
     },
     "bushy": {
@@ -545,7 +625,7 @@ WW\/o o\/WW
         "evolve_lvl": 20,
         "initiative": 1,
         "ico": [{
-            "txt": """
+            "txt": r"""
     (()
    (()))""",
             "esc": None}]
@@ -566,15 +646,14 @@ WW\/o o\/WW
         "evolve_lvl": 25,
         "initiative": 4,
         "ico": [{
-            "txt": """   ^---^
+            "txt": r"""   ^---^
    (   )
    >(.)<""",
-            "esc": None},
-            {
-                "txt": """
+            "esc": None}, {
+            "txt": r"""
     * *
         """,
-                "esc": ["thicc", "red"]}]
+            "esc": ["thicc", "red"]}]
     },
     "wolfiro": {
         "name": "Wolfiro",
@@ -592,15 +671,14 @@ WW\/o o\/WW
         "evolve_lvl": 0,
         "initiative": 5,
         "ico": [{
-            "txt": """   \^-^/
+            "txt": r"""   \^-^/
    {   }
    >{.}<""",
-            "esc": None},
-            {
-                "txt": """
+            "esc": None}, {
+            "txt": r"""
     * *
         """,
-                "esc": ["thicc", "red"]}]
+            "esc": ["thicc", "red"]}]
     },
     "rollator": {
         "name": "Rollator",
@@ -618,8 +696,8 @@ WW\/o o\/WW
         "evolve_lvl": 0,
         "initiative": 3,
         "ico": [{
-            "txt": """   _____
-  / o o \\
+            "txt": r"""   _____
+  / o o \
   | ___ |
   \_____/""",
             "esc": None}]
@@ -636,18 +714,66 @@ WW\/o o\/WW
         "lose_xp": 5,
         "rarity": 0.8,
         "types": ["water", "normal"],
-        "evolve_poke": "",
-        "evolve_lvl": 0,
+        "evolve_poke": "crabbat",
+        "evolve_lvl": 20,
         "initiative": 3,
         "ico": [{
-            "txt": """    ___
+            "txt": r"""    ___
   -/   \-
   -\___/-""",
-            "esc": None},
-            {
-                "txt": """
+            "esc": None}, {
+            "txt": r"""
      *""",
-                "esc": ["lightblue"]}]
+            "esc": ["lightblue"]}]
+    },
+    "crabbat": {
+        "name": "Crabbat",
+        "hp": 30,
+        "atc": 3,
+        "defense": 8,
+        "attacks": ["tackle", "bubble_gun", "earch_quake", "shell_pinch"],
+        "pool": [],
+        "miss_chance": 0,
+        "desc": "A crusty Pokete that loves to pinch big toes.",
+        "lose_xp": 5,
+        "rarity": 0.8,
+        "types": ["water", "ground", "normal"],
+        "evolve_poke": "rustacean",
+        "evolve_lvl": 40,
+        "initiative": 4,
+        "ico": [{
+            "txt": r""" (  ___  )
+  \-   -/
+   ^   ^""",
+            "esc": None}, {
+            "txt": r"""
+    * *""",
+            "esc": ["lightblue"]}]
+    },
+    "rustacean": {
+        "name": "Rustacean",
+        "hp": 35,
+        "atc": 4,
+        "defense": 9,
+        "attacks": ["toe_breaker", "bubble_gun", "earch_quake", "shell_pinch"],
+        "pool": [],
+        "miss_chance": 0,
+        "desc": "A crusty Pokete that will pinch your toe, and check whether \
+or not you borrowed something.",
+        "lose_xp": 5,
+        "rarity": 0.5,
+        "types": ["water", "ground", "normal"],
+        "evolve_poke": "",
+        "evolve_lvl": 0,
+        "initiative": 5,
+        "ico": [{
+            "txt": r""" {  ^^^  }
+  \-   -/
+   ^   ^""",
+            "esc": None}, {
+            "txt": r"""
+    * *""",
+            "esc": ["lightblue"]}]
     },
     "electrode": {
         "name": "Electrode",
@@ -665,13 +791,12 @@ WW\/o o\/WW
         "evolve_lvl": 0,
         "initiative": 4,
         "ico": [{
-            "txt": """
+            "txt": r"""
     ( )""",
-            "esc": None},
-            {
-                "txt": """
+            "esc": None}, {
+            "txt": """
      +""",
-                "esc": ["lightblue"]}]
+            "esc": ["lightblue"]}]
     },
     "cubl": {
         "name": "Cubl",
@@ -689,19 +814,17 @@ WW\/o o\/WW
         "evolve_lvl": 30,
         "initiative": 1,
         "ico": [{
-            "txt": """   -----
+            "txt": r"""   -----
    |   |
    -----""",
-            "esc": None},
-            {
-                "txt": """
+            "esc": None}, {
+            "txt": r"""
     * *""",
-                "esc": ["lightblue"]},
-            {
-                "txt": """  /     \\
+            "esc": ["lightblue"]}, {
+            "txt": r"""  /     \
 
   \     /""",
-                "esc": ["cyan"]
+            "esc": ["cyan"]
             }
         ]
     },
@@ -721,19 +844,19 @@ WW\/o o\/WW
         "evolve_lvl": 0,
         "initiative": 2,
         "ico": [{
-            "txt": """  -------
+            "txt": r"""  -------
   |     |
   -------""",
             "esc": None},
             {
-                "txt": """
+            "txt": r"""
     * *""",
-                "esc": ["lightblue"]},
+            "esc": ["lightblue"]},
             {
-                "txt": """ /       \\
+            "txt": r""" /       \
 
  \       /""",
-                "esc": ["cyan"]
+            "esc": ["cyan"]
             }
         ]
     },
@@ -745,7 +868,8 @@ WW\/o o\/WW
         "attacks": ["confusion"],
         "pool": [],
         "miss_chance": 0.1,
-        "desc": "A ball floating around in dark woods and caves, that will confuse the shit out of you.",
+        "desc": "A ball floating around in dark woods and caves, \
+that will confuse the shit out of you.",
         "lose_xp": 6,
         "rarity": 0.5,
         "types": ["undead"],
@@ -753,19 +877,17 @@ WW\/o o\/WW
         "evolve_lvl": 0,
         "initiative": 2,
         "ico": [{
-            "txt": """
+            "txt": r"""
      _
     (_) """,
-            "esc": None},
-            {
-                "txt": """        }
+            "esc": None}, {
+            "txt": r"""        }
       {
        }""",
-                "esc": ["purple"]},
-            {
-                "txt": """       }
+            "esc": ["purple"]}, {
+            "txt": r"""       }
        {""",
-                "esc": ["lightblue"]},
+            "esc": ["lightblue"]},
         ]
     },
     "poisopla": {
@@ -784,15 +906,14 @@ WW\/o o\/WW
         "evolve_lvl": 20,
         "initiative": 1,
         "ico": [{
-            "txt": """
+            "txt": r"""
        .
  .__ |/|
   \_\||/""",
-            "esc": None},
-            {
-                "txt": """
+            "esc": None}, {
+            "txt": r"""
      w""",
-                "esc": ["purple"]},
+            "esc": ["purple"]},
         ]
     },
     "megapois": {
@@ -811,15 +932,14 @@ WW\/o o\/WW
         "evolve_lvl": 0,
         "initiative": 2,
         "ico": [{
-            "txt": """
+            "txt": r"""
     |/.
 .__\|/|
  \_\||/ """,
-            "esc": None},
-            {
-                "txt": """    w w
+            "esc": None}, {
+            "txt": r"""    w w
   w""",
-                "esc": ["purple"]},
+            "esc": ["purple"]},
         ]
     },
     "schmetterling": {
@@ -838,10 +958,10 @@ WW\/o o\/WW
         "evolve_lvl": 0,
         "initiative": 4,
         "ico": [{
-            "txt": """
+            "txt": r"""
  .__ o __.
   \_\|/_/
-  /_/'\_\\""",
+  /_/'\_\ """,
             "esc": None}
         ]
     },
@@ -861,7 +981,7 @@ WW\/o o\/WW
         "evolve_lvl": 35,
         "initiative": 1,
         "ico": [{
-            "txt": """
+            "txt": r"""
 
     __
    ('')""",
@@ -884,7 +1004,7 @@ WW\/o o\/WW
         "evolve_lvl": 55,
         "initiative": 2,
         "ico": [{
-            "txt": """    
+            "txt": r"""
     __
    ('')
    |  |""",
@@ -907,7 +1027,7 @@ WW\/o o\/WW
         "evolve_lvl": 0,
         "initiative": 3,
         "ico": [{
-            "txt": """    __
+            "txt": r"""    __
    ('')
    |  |
    |  |""",
@@ -930,23 +1050,21 @@ WW\/o o\/WW
         "evolve_lvl": 0,
         "initiative": 2,
         "ico": [{
-            "txt": """
+            "txt": r"""
 
     o o
      -""",
-            "esc": None},
-            {
-                "txt": """
+            "esc": None}, {
+            "txt": r"""
     /\ /
        >
    <_""",
-                "esc": ["cyan"]},
-            {
-                "txt": """
+            "esc": ["cyan"]}, {
+            "txt": r"""
       ^
    <
       _>""",
-                "esc": ["white"]}
+            "esc": ["white"]}
         ]
     },
 }

@@ -1,46 +1,58 @@
 """This file contains input wrappers for ui elements"""
 
 import time
-from pokete_general_use_fns import std_loop, hard_liner
+from pokete_general_use_fns import hard_liner
+from .loops import std_loop
 from .ui_elements import InfoBox, InputBox
+from .event import _ev
 
 
-def text_input(obj, _map, name, ev, wrap_len, max_len=1000000):
-    """Processes text input"""
-    ev.clear()
+def text_input(obj, _map, name, wrap_len, max_len=1000000):
+    """Processes text input
+    ARGS:
+        obj: The text label that will be rechared
+        _map: The map this happens on
+        name: The default value of the label
+        wrap_len: The len at which the text wraps
+        max_len: The len at which the text shall end"""
+    _ev.clear()
     obj.rechar(hard_liner(wrap_len, name + "█"))
     bname = name
     _map.show()
     while True:
-        if ev.get() in ["Key.enter", "Key.esc"]:
-            ev.clear()
+        if _ev.get() in ["Key.enter", "Key.esc"]:
+            _ev.clear()
             obj.rechar(hard_liner(wrap_len, name))
             _map.show()
             return name
-        elif ev.get() == "Key.backspace":
+        elif _ev.get() == "Key.backspace":
             if len(name) <= 0:
-                ev.clear()
+                _ev.clear()
                 obj.rechar(bname)
                 _map.show()
                 return bname
             name = name[:-1]
             obj.rechar(hard_liner(wrap_len, name + "█"))
             _map.show()
-            ev.clear()
-        elif ev.get() not in ["", "Key.enter", "exit", "Key.backspace", "Key.shift",
-                        "Key.shift_r", "Key.esc"] and len(name) < max_len:
-            if ev.get() == "Key.space":
-                ev.set("' '")
-            name += str(ev.get().strip("'"))
+            _ev.clear()
+        elif _ev.get() not in ["", "Key.enter", "exit", "Key.backspace",
+                               "Key.shift", "Key.shift_r",
+                               "Key.esc"] and len(name) < max_len:
+            if _ev.get() == "Key.space":
+                _ev.set("' '")
+            name += str(_ev.get().strip("'"))
             obj.rechar(hard_liner(wrap_len, name + "█"))
             _map.show()
-            ev.clear()
-        std_loop(ev)
+            _ev.clear()
+        std_loop(_map.name == "movemap")
         time.sleep(0.05)
 
 
-def ask_bool(_ev, _map, text):
-    """Asks the player to aswer a yes/no question"""
+def ask_bool(_map, text):
+    """Asks the player to aswer a yes/no question
+    ARGS:
+        _map: The map the question should be asked on
+        text: The actual question"""
     assert len(text) >= 12, "Text has to be longer then 12 characters!"
     text_len = sorted([len(i) for i in text.split('\n')])[-1]
     with InfoBox(f"{text}\n{round(text_len / 2 - 6) * ' '}[Y]es   [N]o",
@@ -52,22 +64,32 @@ def ask_bool(_ev, _map, text):
             elif _ev.get() in ["'n'", "Key.esc", "'q'"]:
                 ret = False
                 break
-            std_loop(_ev)
+            std_loop(_map.name == "movemap")
             time.sleep(0.05)
         _ev.clear()
     return ret
 
 
-def ask_text(_ev, _map, infotext, introtext, text, name, max_len):
-    """Asks the player to input a text"""
+def ask_text(_map, infotext, introtext, text, name, max_len):
+    """Asks the player to input a text
+    ARGS:
+        _map: The map the input box should be shown on
+        infotext: The information text about the input
+        introtext: The text that introduces the text field
+        text: The default text in the text field
+        name: The boxes displayed name
+        max_len: Max length of the text"""
     with InputBox(infotext, introtext, text, max_len, name, _map) as inputbox:
-        ret = text_input(inputbox.text, _map, text, _ev, max_len + 1,
+        ret = text_input(inputbox.text, _map, text, max_len + 1,
                          max_len=max_len)
     return ret
 
 
-def ask_ok(_ev, _map, text):
-    """Asks the player to an OK question"""
+def ask_ok(_map, text):
+    """Asks the player to an OK question
+    ARGS:
+        _map: The map the question is asked on
+        text: The question it self"""
     assert len(text) >= 4, "Text has to be longer then 4 characters!"
     text_len = sorted([len(i) for i in text.split('\n')])[-1]
     with InfoBox(f"{text}\n{round(text_len / 2 - 2) * ' '}[O]k", name="Info",
@@ -75,6 +97,10 @@ def ask_ok(_ev, _map, text):
         while True:
             if _ev.get() in ["'o'", "'O'", "Key.enter"]:
                 break
-            std_loop(_ev)
+            std_loop(_map.name == "movemap")
             time.sleep(0.05)
         _ev.clear()
+
+
+if __name__ == "__main__":
+    print("\033[31;1mDo not execute this!\033[0m")
